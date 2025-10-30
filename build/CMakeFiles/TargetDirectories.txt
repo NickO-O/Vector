@@ -1,4 +1,0 @@
-/mnt/c/Users/user/Desktop/Vector/build/CMakeFiles/vector_tests.dir
-/mnt/c/Users/user/Desktop/Vector/build/CMakeFiles/test.dir
-/mnt/c/Users/user/Desktop/Vector/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/user/Desktop/Vector/build/CMakeFiles/rebuild_cache.dir
