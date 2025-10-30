@@ -49,6 +49,7 @@ public:
         }
     }
 
+
     Vector(std::initializer_list<T> init) : size_(init.size()) {
         if (size_ > 0) {
             data_ = new T[size_];

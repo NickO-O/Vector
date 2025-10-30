@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/user/Desktop/Vector -I/mnt/c/Users/user/Desktop/Vector/catch
+CXX_INCLUDES = -I/mnt/c/Users/user/Desktop/Vector -I/mnt/c/Users/user/Desktop/Vector/src -I/mnt/c/Users/user/Desktop/Vector/catch
 
 CXX_FLAGS = -std=c++17
 
