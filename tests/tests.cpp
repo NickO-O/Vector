@@ -40,3 +40,9 @@ TEST_CASE("Copy constructor") {
     REQUIRE(vec2[1] == 4);
     REQUIRE(vec2[2] == 1);
 }
+
+TEST_CASE("Right size") {
+    Vector<int> vec1;
+    vec1.resize(12);
+    REQUIRE(vec1.size() == 12);
+}

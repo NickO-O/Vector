@@ -1,6 +1,6 @@
+#include <initializer_list>
 #include <stdexcept>
 #include <utility>
-#include <initializer_list>
 
 template <typename T>
 class Vector {
@@ -48,7 +48,6 @@ public:
             }
         }
     }
-
 
     Vector(std::initializer_list<T> init) : size_(init.size()) {
         if (size_ > 0) {
@@ -111,17 +110,35 @@ public:
         return *this;
     }
 
-    T& operator[](size_t pos) { return data_[pos]; }
-    const T& operator[](size_t pos) const { return data_[pos]; }
+    T& operator[](size_t pos) {
+        return data_[pos];
+    }
+    const T& operator[](size_t pos) const {
+        return data_[pos];
+    }
 
-    T* begin() noexcept { return data_; }
-    const T* begin() const noexcept { return data_; }
-    T* end() noexcept { return data_ + size_; }
-    const T* end() const noexcept { return data_ + size_; }
+    T* begin() noexcept {
+        return data_;
+    }
+    const T* begin() const noexcept {
+        return data_;
+    }
+    T* end() noexcept {
+        return data_ + size_;
+    }
+    const T* end() const noexcept {
+        return data_ + size_;
+    }
 
-    size_t size() const noexcept { return size_; }
-    size_t capacity() const noexcept { return capacity_; }
-    bool empty() const noexcept { return size_ == 0; }
+    size_t size() const noexcept {
+        return size_;
+    }
+    size_t capacity() const noexcept {
+        return capacity_;
+    }
+    bool empty() const noexcept {
+        return size_ == 0;
+    }
 
     void resize(size_t new_size) {
         if (new_size <= size_) {
@@ -130,7 +147,8 @@ public:
         }
         if (new_size > capacity_) {
             size_t new_cap = (capacity_ == 0) ? 1 : capacity_ * 2;
-            while (new_cap < new_size) new_cap *= 2;
+            while (new_cap < new_size)
+                new_cap *= 2;
             reallocate(new_cap);
         }
         size_ = new_size;
@@ -154,7 +172,8 @@ public:
     }
 
     void pop_back() {
-        if (size_ > 0) --size_;
+        if (size_ > 0)
+            --size_;
     }
 
     void clear() noexcept {
